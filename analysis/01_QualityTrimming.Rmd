@@ -89,6 +89,9 @@ raw_fastqs_path <- "data/01_DADA2/01_raw_gzipped_fastqs"
 raw_fastqs_path
 
 # What files are in this path? Intuition Check 
+
+############ What should my intuition be telling me here...
+
 head(list.files(raw_fastqs_path))
 
 # How many files are there? 
@@ -216,6 +219,7 @@ General notes on Illumina sequencing
 - **Reverse Reads Quality is generally lower because:** 
   - Sequencing of the reverse reads happens second, after chemistry degrades a bit after sequencing the forward reads. 
   - Physical flipping of the sequence is required.
+################# Physical flipping of the sequence? How?
   - Phasing errors are enhanced, more accumulated errors.
   - Optical strength is weaker compared to the first sequencing, leading to more miscalls. 
 
